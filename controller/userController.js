@@ -1,4 +1,4 @@
-const userModel = require('../model/userModel');
+const userModel = require('../models/userModel');
 const jwt = require("jsonwebtoken");
 
 const { isValid,
@@ -9,7 +9,7 @@ const { isValid,
     isValidRequestBody,
     isValidTitle,
     isValidPhone
-} = require("../utility/validation")
+} = require("../utilitys/validation")
 
 
 /*______________________________________---====> CREATE A USER <=====---___________________________________*/ 

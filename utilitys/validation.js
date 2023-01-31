@@ -28,10 +28,7 @@ const isValidDate = function (date) {
     return dateFormatRegex.test(date)
 }
 
-const isValidISBN = function (ISBN) {
-    let ISBNRegex = /^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$/
-    return ISBNRegex.test(ISBN)
-}
+
 
 const isValidName = function (name) {
     let nameRegex = /^[.a-zA-Z\s,-]+$/
@@ -66,7 +63,6 @@ module.exports = {
     isValid,
     isValidDate,
     isValidEmail,
-    isValidISBN,
     isValidName,
     isValidObjectId,
     isValidPassword,

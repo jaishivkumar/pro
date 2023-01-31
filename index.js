@@ -1,14 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose")
-const route = require('./routes/route.js');
+const route = require('./route/route');
 
 const app = express();
 
 app.use(bodyParser.json());
 
 
-mongoose.connect("mongodb+srv://shivkumar:I81Q7TvA9ObKHdC3@cluster0.ub8d9.mongodb.net/group71Database")
+mongoose.connect("mongodb+srv://shivkumar:I81Q7TvA9ObKHdC3@cluster0.ub8d9.mongodb.net/interview")
     .then(() => console.log("MongoDb is connected"))
     .catch(err => console.log(err))
 
